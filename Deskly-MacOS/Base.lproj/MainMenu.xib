@@ -22,13 +22,13 @@
         </customObject>
         <menu id="AIf-lz-SWH">
             <items>
-                <menuItem title="Generate Desktop Picture" id="aFr-ug-EuR">
+                <menuItem title="Generate Desktop Image" id="aFr-ug-EuR">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="generateClicked:" target="uMh-Ej-LCX" id="JDN-fF-zD5"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Copy Desktop Picture" id="5b6-91-Lnc">
+                <menuItem title="Copy Desktop Image" id="5b6-91-Lnc">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="copyClicked:" target="uMh-Ej-LCX" id="PIk-mB-k9G"/>
