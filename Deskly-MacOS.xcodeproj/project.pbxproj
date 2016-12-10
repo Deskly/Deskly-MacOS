@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5304157C1DFB864C0031BA56 /* NSImage+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304157B1DFB864C0031BA56 /* NSImage+Save.swift */; };
 		534F6F5F1DFADC6C00A6389C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F6F5E1DFADC6C00A6389C /* AppDelegate.swift */; };
 		534F6F611DFADC6C00A6389C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534F6F601DFADC6C00A6389C /* Assets.xcassets */; };
 		534F6F641DFADC6C00A6389C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534F6F621DFADC6C00A6389C /* MainMenu.xib */; };
 		534F6F6F1DFADC6C00A6389C /* Deskly_MacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F6F6E1DFADC6C00A6389C /* Deskly_MacOSTests.swift */; };
 		534F6F7A1DFADC6C00A6389C /* Deskly_MacOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F6F791DFADC6C00A6389C /* Deskly_MacOSUITests.swift */; };
+		534F6F881DFAE23100A6389C /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F6F871DFAE23100A6389C /* StatusMenuController.swift */; };
+		53E309641DFAEEA50023912F /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F6F871DFAE23100A6389C /* StatusMenuController.swift */; };
+		53E309651DFAEF0C0023912F /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F6F871DFAE23100A6389C /* StatusMenuController.swift */; };
+		66DE2BD78E2455E0E68D0B3F /* Pods_Deskly_MacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69CF22F1CB6024E9B935534F /* Pods_Deskly_MacOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C9A5519A37C707BDE19C4BB /* Pods-Deskly-MacOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deskly-MacOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Deskly-MacOS/Pods-Deskly-MacOS.release.xcconfig"; sourceTree = "<group>"; };
+		5304157B1DFB864C0031BA56 /* NSImage+Save.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSImage+Save.swift"; sourceTree = "<group>"; };
 		534F6F5B1DFADC6C00A6389C /* Deskly-MacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deskly-MacOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		534F6F5E1DFADC6C00A6389C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		534F6F601DFADC6C00A6389C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +50,9 @@
 		534F6F751DFADC6C00A6389C /* Deskly-MacOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Deskly-MacOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		534F6F791DFADC6C00A6389C /* Deskly_MacOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deskly_MacOSUITests.swift; sourceTree = "<group>"; };
 		534F6F7B1DFADC6C00A6389C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		534F6F871DFAE23100A6389C /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		69CF22F1CB6024E9B935534F /* Pods_Deskly_MacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deskly_MacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B5EF944CE35C756F861EB1 /* Pods-Deskly-MacOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deskly-MacOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Deskly-MacOS/Pods-Deskly-MacOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66DE2BD78E2455E0E68D0B3F /* Pods_Deskly_MacOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2628C3D617D56AA8C778865F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9B5EF944CE35C756F861EB1 /* Pods-Deskly-MacOS.debug.xcconfig */,
+				4C9A5519A37C707BDE19C4BB /* Pods-Deskly-MacOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		534F6F521DFADC6C00A6389C = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +97,8 @@
 				534F6F6D1DFADC6C00A6389C /* Deskly-MacOSTests */,
 				534F6F781DFADC6C00A6389C /* Deskly-MacOSUITests */,
 				534F6F5C1DFADC6C00A6389C /* Products */,
+				2628C3D617D56AA8C778865F /* Pods */,
+				FCEDB0481A74732E3EE4E243 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +119,8 @@
 				534F6F601DFADC6C00A6389C /* Assets.xcassets */,
 				534F6F621DFADC6C00A6389C /* MainMenu.xib */,
 				534F6F651DFADC6C00A6389C /* Info.plist */,
+				534F6F871DFAE23100A6389C /* StatusMenuController.swift */,
+				5304157B1DFB864C0031BA56 /* NSImage+Save.swift */,
 			);
 			path = "Deskly-MacOS";
 			sourceTree = "<group>";
@@ -119,6 +143,14 @@
 			path = "Deskly-MacOSUITests";
 			sourceTree = "<group>";
 		};
+		FCEDB0481A74732E3EE4E243 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69CF22F1CB6024E9B935534F /* Pods_Deskly_MacOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 534F6F7E1DFADC6C00A6389C /* Build configuration list for PBXNativeTarget "Deskly-MacOS" */;
 			buildPhases = (
+				AAEB9C1AEADDEDCD4E95712D /* [CP] Check Pods Manifest.lock */,
 				534F6F571DFADC6C00A6389C /* Sources */,
 				534F6F581DFADC6C00A6389C /* Frameworks */,
 				534F6F591DFADC6C00A6389C /* Resources */,
+				2BF782DDCFD0F07A46680D61 /* [CP] Embed Pods Frameworks */,
+				9A1F0FED9E648E0C1FACB343 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,12 +282,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BF782DDCFD0F07A46680D61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Deskly-MacOS/Pods-Deskly-MacOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A1F0FED9E648E0C1FACB343 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Deskly-MacOS/Pods-Deskly-MacOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAEB9C1AEADDEDCD4E95712D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		534F6F571DFADC6C00A6389C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				534F6F881DFAE23100A6389C /* StatusMenuController.swift in Sources */,
 				534F6F5F1DFADC6C00A6389C /* AppDelegate.swift in Sources */,
+				5304157C1DFB864C0031BA56 /* NSImage+Save.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E309641DFAEEA50023912F /* StatusMenuController.swift in Sources */,
 				534F6F6F1DFADC6C00A6389C /* Deskly_MacOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E309651DFAEF0C0023912F /* StatusMenuController.swift in Sources */,
 				534F6F7A1DFADC6C00A6389C /* Deskly_MacOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +478,7 @@
 		};
 		534F6F7F1DFADC6C00A6389C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9B5EF944CE35C756F861EB1 /* Pods-Deskly-MacOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -404,6 +492,7 @@
 		};
 		534F6F801DFADC6C00A6389C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9A5519A37C707BDE19C4BB /* Pods-Deskly-MacOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -492,6 +581,7 @@
 				534F6F801DFADC6C00A6389C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		534F6F811DFADC6C00A6389C /* Build configuration list for PBXNativeTarget "Deskly-MacOSTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +590,7 @@
 				534F6F831DFADC6C00A6389C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		534F6F841DFADC6C00A6389C /* Build configuration list for PBXNativeTarget "Deskly-MacOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +599,7 @@
 				534F6F861DFADC6C00A6389C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
