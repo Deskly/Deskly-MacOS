@@ -1,16 +1,17 @@
 //
 //  AppDelegate.swift
-//  Deskly-MacOS
+//  Deskly
 //
-//  Created by Keith Toh on 9/12/16.
-//  Copyright © 2016 Kaioru. All rights reserved.
+//  Copyright © 2017 Deskly. All rights reserved.
 //
 
 import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    
+
+
+
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     }

@@ -1,15 +1,14 @@
 //
-//  Deskly_MacOSTests.swift
-//  Deskly-MacOSTests
+//  DesklyTests.swift
+//  DesklyTests
 //
-//  Created by Keith Toh on 9/12/16.
-//  Copyright © 2016 Kaioru. All rights reserved.
+//  Copyright © 2017 Deskly. All rights reserved.
 //
 
 import XCTest
-@testable import Deskly_MacOS
+@testable import Deskly
 
-class Deskly_MacOSTests: XCTestCase {
+class DesklyTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
