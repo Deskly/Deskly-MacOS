@@ -19,7 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.statusItem = NSStatusBar.system().statusItem(withLength: -1)
         
         // Set the text that appears in the menu bar
-        self.statusItem!.title = "Star!"
+        self.statusItem!.title = "Deskly"
         // image should be set as tempate so that it changes when the user sets the menu bar to a dark theme
         self.statusItem?.image?.isTemplate = true
         
