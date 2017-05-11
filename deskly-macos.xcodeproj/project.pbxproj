@@ -1,245 +1,1010 @@
 // !$*UTF8*$!
 {
-   archiveVersion = "1";
-   objectVersion = "46";
-   objects = {
-      OBJ_1 = {
-         isa = "PBXProject";
-         attributes = {
-            LastUpgradeCheck = "9999";
-         };
-         buildConfigurationList = OBJ_2;
-         compatibilityVersion = "Xcode 3.2";
-         developmentRegion = "English";
-         hasScannedForEncodings = "0";
-         knownRegions = (
-            "en",
-         );
-         mainGroup = OBJ_5;
-         productRefGroup = OBJ_10;
-         projectDirPath = ".";
-         targets = (
-            OBJ_12,
-         );
-      };
-      OBJ_10 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_11,
-         );
-         name = "Products";
-         path = "";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      OBJ_11 = {
-         isa = "PBXFileReference";
-         path = "deskly-macos";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      OBJ_12 = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = OBJ_13;
-         buildPhases = (
-            OBJ_16,
-            OBJ_18,
-         );
-         dependencies = (
-         );
-         name = "deskly-macos";
-         productName = "deskly_macos";
-         productReference = OBJ_11;
-         productType = "com.apple.product-type.tool";
-      };
-      OBJ_13 = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            OBJ_14,
-            OBJ_15,
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Debug";
-      };
-      OBJ_14 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-            );
-            INFOPLIST_FILE = "deskly-macos.xcodeproj/deskly_macos_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-               "@executable_path",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
-            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
-            TARGET_NAME = "deskly-macos";
-         };
-         name = "Debug";
-      };
-      OBJ_15 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-            );
-            INFOPLIST_FILE = "deskly-macos.xcodeproj/deskly_macos_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-               "@executable_path",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
-            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
-            TARGET_NAME = "deskly-macos";
-         };
-         name = "Release";
-      };
-      OBJ_16 = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            OBJ_17,
-         );
-      };
-      OBJ_17 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_8;
-      };
-      OBJ_18 = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
-      };
-      OBJ_2 = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            OBJ_3,
-            OBJ_4,
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Debug";
-      };
-      OBJ_3 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "NO";
-            DEBUG_INFORMATION_FORMAT = "dwarf";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            ENABLE_NS_ASSERTIONS = "YES";
-            GCC_OPTIMIZATION_LEVEL = "0";
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            ONLY_ACTIVE_ARCH = "YES";
-            OTHER_SWIFT_FLAGS = (
-               "-DXcode",
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "macosx";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator",
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
-            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            SWIFT_VERSION = "3.0";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Debug";
-      };
-      OBJ_4 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "YES";
-            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            GCC_OPTIMIZATION_LEVEL = "s";
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_SWIFT_FLAGS = (
-               "-DXcode",
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "macosx";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator",
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
-            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-            SWIFT_VERSION = "3.0";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Release";
-      };
-      OBJ_5 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_6,
-            OBJ_7,
-            OBJ_9,
-            OBJ_10,
-         );
-         path = "";
-         sourceTree = "<group>";
-      };
-      OBJ_6 = {
-         isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         path = "Package.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_7 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_8,
-         );
-         name = "Sources";
-         path = "Sources";
-         sourceTree = "SOURCE_ROOT";
-      };
-      OBJ_8 = {
-         isa = "PBXFileReference";
-         path = "main.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_9 = {
-         isa = "PBXGroup";
-         children = (
-         );
-         name = "Tests";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-   };
-   rootObject = OBJ_1;
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53DB1F181EC40510007A89F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB1F171EC40510007A89F5 /* AppDelegate.swift */; };
+		53DB1F1A1EC40510007A89F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB1F191EC40510007A89F5 /* ViewController.swift */; };
+		53DB1F1C1EC40510007A89F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53DB1F1B1EC40510007A89F5 /* Assets.xcassets */; };
+		53DB1F1F1EC40510007A89F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53DB1F1D1EC40510007A89F5 /* Main.storyboard */; };
+		53DB1F2A1EC40510007A89F5 /* DesklyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB1F291EC40510007A89F5 /* DesklyTests.swift */; };
+		53DB1F351EC40510007A89F5 /* DesklyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DB1F341EC40510007A89F5 /* DesklyUITests.swift */; };
+		B4090FFAB81674D83C7DEAE3 /* Pods_DesklyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA16001FF4A591D0955134D /* Pods_DesklyTests.framework */; };
+		CC3FA40D4E390F96205117FC /* Pods_deskly_macos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B5E16EC46605F3A3CF4EF5 /* Pods_deskly_macos.framework */; };
+		F7E4578A9AAA3F7AD6B465DD /* Pods_DesklyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C08049639A113CDE30308FF /* Pods_DesklyUITests.framework */; };
+		FFD9D4CCB038C8E3E1B9C08A /* Pods_Deskly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB387229E74914D4508B8DF /* Pods_Deskly.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53DB1F261EC40510007A89F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DB1F141EC40510007A89F5;
+			remoteInfo = Deskly;
+		};
+		53DB1F311EC40510007A89F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DB1F141EC40510007A89F5;
+			remoteInfo = Deskly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		164F1E46A2EBFBD0113B67A0 /* Pods-Deskly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deskly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Deskly/Pods-Deskly.debug.xcconfig"; sourceTree = "<group>"; };
+		1995BC1E2256061E13ACA5DD /* Pods-Deskly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deskly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Deskly/Pods-Deskly.release.xcconfig"; sourceTree = "<group>"; };
+		2FB387229E74914D4508B8DF /* Pods_Deskly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deskly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ABBAF4CC724A50E186527B9 /* Pods-DesklyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesklyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DesklyTests/Pods-DesklyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3CC7C274D38D24F8B59ED82E /* Pods-deskly-macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deskly-macos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deskly-macos/Pods-deskly-macos.debug.xcconfig"; sourceTree = "<group>"; };
+		53DB1F151EC40510007A89F5 /* Deskly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Deskly.app; path = "/Users/keith/Workspace/deskly-macos/build/Debug/Deskly.app"; sourceTree = "<absolute>"; };
+		53DB1F171EC40510007A89F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53DB1F191EC40510007A89F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53DB1F1B1EC40510007A89F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53DB1F1E1EC40510007A89F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53DB1F201EC40510007A89F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53DB1F251EC40510007A89F5 /* DesklyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DesklyTests.xctest; path = "/Users/keith/Workspace/deskly-macos/build/Debug/DesklyTests.xctest"; sourceTree = "<absolute>"; };
+		53DB1F291EC40510007A89F5 /* DesklyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesklyTests.swift; sourceTree = "<group>"; };
+		53DB1F2B1EC40510007A89F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53DB1F301EC40510007A89F5 /* DesklyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DesklyUITests.xctest; path = "/Users/keith/Workspace/deskly-macos/build/Debug/DesklyUITests.xctest"; sourceTree = "<absolute>"; };
+		53DB1F341EC40510007A89F5 /* DesklyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesklyUITests.swift; sourceTree = "<group>"; };
+		53DB1F361EC40510007A89F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C08049639A113CDE30308FF /* Pods_DesklyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesklyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		663DABBB25CA00B581C3A7D6 /* Pods-DesklyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesklyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DesklyUITests/Pods-DesklyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B52A819B3C3AE10AB29794D /* Pods-DesklyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesklyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DesklyUITests/Pods-DesklyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8D1EAFE78E76954B733389A7 /* Pods-deskly-macos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deskly-macos.release.xcconfig"; path = "Pods/Target Support Files/Pods-deskly-macos/Pods-deskly-macos.release.xcconfig"; sourceTree = "<group>"; };
+		AE73C00C6C3B0D741D658C4F /* Pods-DesklyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesklyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DesklyTests/Pods-DesklyTests.release.xcconfig"; sourceTree = "<group>"; };
+		D9B5E16EC46605F3A3CF4EF5 /* Pods_deskly_macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deskly_macos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFA16001FF4A591D0955134D /* Pods_DesklyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesklyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_11 /* deskly-macos */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; name = "deskly-macos"; path = "/Users/keith/Workspace/deskly-macos/build/Debug/deskly-macos"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53DB1F121EC40510007A89F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD9D4CCB038C8E3E1B9C08A /* Pods_Deskly.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53DB1F221EC40510007A89F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4090FFAB81674D83C7DEAE3 /* Pods_DesklyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53DB1F2D1EC40510007A89F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E4578A9AAA3F7AD6B465DD /* Pods_DesklyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				CC3FA40D4E390F96205117FC /* Pods_deskly_macos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3406A5F9F875EFA8924969FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				164F1E46A2EBFBD0113B67A0 /* Pods-Deskly.debug.xcconfig */,
+				1995BC1E2256061E13ACA5DD /* Pods-Deskly.release.xcconfig */,
+				3ABBAF4CC724A50E186527B9 /* Pods-DesklyTests.debug.xcconfig */,
+				AE73C00C6C3B0D741D658C4F /* Pods-DesklyTests.release.xcconfig */,
+				663DABBB25CA00B581C3A7D6 /* Pods-DesklyUITests.debug.xcconfig */,
+				7B52A819B3C3AE10AB29794D /* Pods-DesklyUITests.release.xcconfig */,
+				3CC7C274D38D24F8B59ED82E /* Pods-deskly-macos.debug.xcconfig */,
+				8D1EAFE78E76954B733389A7 /* Pods-deskly-macos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		53DB1F161EC40510007A89F5 /* Deskly */ = {
+			isa = PBXGroup;
+			children = (
+				53DB1F171EC40510007A89F5 /* AppDelegate.swift */,
+				53DB1F191EC40510007A89F5 /* ViewController.swift */,
+				53DB1F1B1EC40510007A89F5 /* Assets.xcassets */,
+				53DB1F1D1EC40510007A89F5 /* Main.storyboard */,
+				53DB1F201EC40510007A89F5 /* Info.plist */,
+			);
+			path = Deskly;
+			sourceTree = "<group>";
+		};
+		53DB1F281EC40510007A89F5 /* DesklyTests */ = {
+			isa = PBXGroup;
+			children = (
+				53DB1F291EC40510007A89F5 /* DesklyTests.swift */,
+				53DB1F2B1EC40510007A89F5 /* Info.plist */,
+			);
+			path = DesklyTests;
+			sourceTree = "<group>";
+		};
+		53DB1F331EC40510007A89F5 /* DesklyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53DB1F341EC40510007A89F5 /* DesklyUITests.swift */,
+				53DB1F361EC40510007A89F5 /* Info.plist */,
+			);
+			path = DesklyUITests;
+			sourceTree = "<group>";
+		};
+		7A7C6F7E7FED845CAB21076D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FB387229E74914D4508B8DF /* Pods_Deskly.framework */,
+				EFA16001FF4A591D0955134D /* Pods_DesklyTests.framework */,
+				5C08049639A113CDE30308FF /* Pods_DesklyUITests.framework */,
+				D9B5E16EC46605F3A3CF4EF5 /* Pods_deskly_macos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				53DB1F161EC40510007A89F5 /* Deskly */,
+				53DB1F281EC40510007A89F5 /* DesklyTests */,
+				53DB1F331EC40510007A89F5 /* DesklyUITests */,
+				3406A5F9F875EFA8924969FE /* Pods */,
+				7A7C6F7E7FED845CAB21076D /* Frameworks */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53DB1F141EC40510007A89F5 /* Deskly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53DB1F371EC40510007A89F5 /* Build configuration list for PBXNativeTarget "Deskly" */;
+			buildPhases = (
+				1F9E2D5C13FFE1A8FCCA75C3 /* [CP] Check Pods Manifest.lock */,
+				53DB1F111EC40510007A89F5 /* Sources */,
+				53DB1F121EC40510007A89F5 /* Frameworks */,
+				53DB1F131EC40510007A89F5 /* Resources */,
+				D6D5A15AF62684E8B5AE395A /* [CP] Embed Pods Frameworks */,
+				0C84A7733D02B82073FC1903 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Deskly;
+			productName = Deskly;
+			productReference = 53DB1F151EC40510007A89F5 /* Deskly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53DB1F241EC40510007A89F5 /* DesklyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53DB1F3A1EC40510007A89F5 /* Build configuration list for PBXNativeTarget "DesklyTests" */;
+			buildPhases = (
+				0E101986D5B099D9E0BAD871 /* [CP] Check Pods Manifest.lock */,
+				53DB1F211EC40510007A89F5 /* Sources */,
+				53DB1F221EC40510007A89F5 /* Frameworks */,
+				53DB1F231EC40510007A89F5 /* Resources */,
+				95EF3784C07D336A3912C984 /* [CP] Embed Pods Frameworks */,
+				7378151A9DE4FD5247EF2B90 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53DB1F271EC40510007A89F5 /* PBXTargetDependency */,
+			);
+			name = DesklyTests;
+			productName = DesklyTests;
+			productReference = 53DB1F251EC40510007A89F5 /* DesklyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		53DB1F2F1EC40510007A89F5 /* DesklyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53DB1F3D1EC40510007A89F5 /* Build configuration list for PBXNativeTarget "DesklyUITests" */;
+			buildPhases = (
+				682FC6ADE4B6E8BDAB8A754D /* [CP] Check Pods Manifest.lock */,
+				53DB1F2C1EC40510007A89F5 /* Sources */,
+				53DB1F2D1EC40510007A89F5 /* Frameworks */,
+				53DB1F2E1EC40510007A89F5 /* Resources */,
+				0507E4B29A7AC6AA0BFF8793 /* [CP] Embed Pods Frameworks */,
+				ED1AB9140CB9F03E94CCD1AF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53DB1F321EC40510007A89F5 /* PBXTargetDependency */,
+			);
+			name = DesklyUITests;
+			productName = DesklyUITests;
+			productReference = 53DB1F301EC40510007A89F5 /* DesklyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		OBJ_12 /* deskly-macos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_13 /* Build configuration list for PBXNativeTarget "deskly-macos" */;
+			buildPhases = (
+				4ED76F412C9ED423E5DE21D3 /* [CP] Check Pods Manifest.lock */,
+				OBJ_16 /* Sources */,
+				OBJ_18 /* Frameworks */,
+				35992F9B29CE7B0D47BD31AC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "deskly-macos";
+			productName = deskly_macos;
+			productReference = OBJ_11 /* deskly-macos */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					53DB1F141EC40510007A89F5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Z4MB5XZ2U6;
+						ProvisioningStyle = Automatic;
+					};
+					53DB1F241EC40510007A89F5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Z4MB5XZ2U6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 53DB1F141EC40510007A89F5;
+					};
+					53DB1F2F1EC40510007A89F5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Z4MB5XZ2U6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 53DB1F141EC40510007A89F5;
+					};
+					OBJ_12 = {
+						DevelopmentTeam = Z4MB5XZ2U6;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "deskly-macos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_5;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				OBJ_12 /* deskly-macos */,
+				53DB1F141EC40510007A89F5 /* Deskly */,
+				53DB1F241EC40510007A89F5 /* DesklyTests */,
+				53DB1F2F1EC40510007A89F5 /* DesklyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53DB1F131EC40510007A89F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53DB1F1C1EC40510007A89F5 /* Assets.xcassets in Resources */,
+				53DB1F1F1EC40510007A89F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53DB1F231EC40510007A89F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53DB1F2E1EC40510007A89F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0507E4B29A7AC6AA0BFF8793 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DesklyUITests/Pods-DesklyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C84A7733D02B82073FC1903 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Deskly/Pods-Deskly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E101986D5B099D9E0BAD871 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1F9E2D5C13FFE1A8FCCA75C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		35992F9B29CE7B0D47BD31AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deskly-macos/Pods-deskly-macos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ED76F412C9ED423E5DE21D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		682FC6ADE4B6E8BDAB8A754D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7378151A9DE4FD5247EF2B90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DesklyTests/Pods-DesklyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95EF3784C07D336A3912C984 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DesklyTests/Pods-DesklyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6D5A15AF62684E8B5AE395A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Deskly/Pods-Deskly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED1AB9140CB9F03E94CCD1AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DesklyUITests/Pods-DesklyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53DB1F111EC40510007A89F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53DB1F1A1EC40510007A89F5 /* ViewController.swift in Sources */,
+				53DB1F181EC40510007A89F5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53DB1F211EC40510007A89F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53DB1F2A1EC40510007A89F5 /* DesklyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53DB1F2C1EC40510007A89F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53DB1F351EC40510007A89F5 /* DesklyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53DB1F271EC40510007A89F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53DB1F141EC40510007A89F5 /* Deskly */;
+			targetProxy = 53DB1F261EC40510007A89F5 /* PBXContainerItemProxy */;
+		};
+		53DB1F321EC40510007A89F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53DB1F141EC40510007A89F5 /* Deskly */;
+			targetProxy = 53DB1F311EC40510007A89F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53DB1F1D1EC40510007A89F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53DB1F1E1EC40510007A89F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53DB1F381EC40510007A89F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164F1E46A2EBFBD0113B67A0 /* Pods-Deskly.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z4MB5XZ2U6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Deskly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.Deskly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		53DB1F391EC40510007A89F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1995BC1E2256061E13ACA5DD /* Pods-Deskly.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = Z4MB5XZ2U6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Deskly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.Deskly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		53DB1F3B1EC40510007A89F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ABBAF4CC724A50E186527B9 /* Pods-DesklyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z4MB5XZ2U6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = DesklyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.DesklyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deskly.app/Contents/MacOS/Deskly";
+			};
+			name = Debug;
+		};
+		53DB1F3C1EC40510007A89F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE73C00C6C3B0D741D658C4F /* Pods-DesklyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = Z4MB5XZ2U6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = DesklyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.DesklyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deskly.app/Contents/MacOS/Deskly";
+			};
+			name = Release;
+		};
+		53DB1F3E1EC40510007A89F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 663DABBB25CA00B581C3A7D6 /* Pods-DesklyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z4MB5XZ2U6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = DesklyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.DesklyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Deskly;
+			};
+			name = Debug;
+		};
+		53DB1F3F1EC40510007A89F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B52A819B3C3AE10AB29794D /* Pods-DesklyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = Z4MB5XZ2U6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = DesklyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.DesklyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Deskly;
+			};
+			name = Release;
+		};
+		OBJ_14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CC7C274D38D24F8B59ED82E /* Pods-deskly-macos.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = Z4MB5XZ2U6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.Deskly;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/deskly-macos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = "deskly-macos";
+			};
+			name = Debug;
+		};
+		OBJ_15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D1EAFE78E76954B733389A7 /* Pods-deskly-macos.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = Z4MB5XZ2U6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.Deskly;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/deskly-macos-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = "deskly-macos";
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53DB1F371EC40510007A89F5 /* Build configuration list for PBXNativeTarget "Deskly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53DB1F381EC40510007A89F5 /* Debug */,
+				53DB1F391EC40510007A89F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		53DB1F3A1EC40510007A89F5 /* Build configuration list for PBXNativeTarget "DesklyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53DB1F3B1EC40510007A89F5 /* Debug */,
+				53DB1F3C1EC40510007A89F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		53DB1F3D1EC40510007A89F5 /* Build configuration list for PBXNativeTarget "DesklyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53DB1F3E1EC40510007A89F5 /* Debug */,
+				53DB1F3F1EC40510007A89F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		OBJ_13 /* Build configuration list for PBXNativeTarget "deskly-macos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_14 /* Debug */,
+				OBJ_15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "deskly-macos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
 }
